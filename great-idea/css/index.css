@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 	.container {
-		width: 80%;
+		width: 90%;
 		height: 50%;
 		margin-left: auto;
 		margin-right: auto;
@@ -75,89 +75,120 @@ h1, h2, h3, h4, h5 {
 	/* Navigation */
 
 		nav {
-			word-spacing: 70px;
+			word-spacing: 65px;
 			}
-
 		
-
 		
-
 	/* header */
 
-	.logo {
-		position: relative;
-		left: 720px;
-		bottom: 30px;
+		.logo {
+			position: relative;
+			left: 720px;
+			bottom: 30px;
+			} 
+
+		.logo-2 {
+			
+			padding-bottom: 15px;
+			padding-left: 40px;
 		}
 
-	header {
-		border-bottom: 1px solid black;
-		margin: 20px 0;
-		padding: 20px 0;
-	}
+		header {
+			border-bottom: 1px solid black;
+			margin: 20px 0;
+			padding: 20px 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			}
 
-	.demand {
-		display: inline-block;
-		margin: 5px 50px 0px 0px;
-		position: relative;
-		top: 180px;
-		left: 140px;
-		text-align: center;
-		font-size: 80px;
-		font-weight: bold;
-		font-family: "bangers";
+		.services-header-img {
+			width: 850px;
+			}
 		
-		}
+		.child-container  {
+			width: 850px;
+			margin-top: 25px;
+			margin-bottom: 15px;
+			}
+
+
+
+		.demand {
+			display: inline-block;
+			margin: 5px 50px 0px 0px;
+			position: relative;
+			top: 180px;
+			left: 140px;
+			text-align: center;
+			font-size: 80px;
+			font-weight: bold;
+			font-family: "bangers";
+			}
 
 		.services-header-img {
 			display: flex;
-		}
+			}
 
+		.button-1 {
+			display: block;
+			position: relative;
+			top: 180px;
+			left: 160px;
+			right: 100px;
+			width: 20%;
+			font-size: 15px;
+			background-color: whitesmoke;
+			font-weight: lighter;
+			margin: 0px 0px 0px 30px;
+			}
 
-	.button-1 {
-		display: block;
-		position: relative;
-		top: 180px;
-		left: 160px;
-		right: 100px;
-		width: 20%;
-		font-size: 15px;
-		background-color: whitesmoke;
-		font-weight: lighter;
-		margin: 0px 0px 0px 30px;
-		
-	}
-
-	/* .circle {
-	display: inline-block;
-	position: relative;
-	bottom: 100px;
-	left: 170px;
-	margin: 0px 400px;
-	} */
-		
+		.circle {
+			display: inline-block;
+			position: relative;
+			bottom: 100px;
+			left: 170px;
+			margin: 0px 400px;
+			}
+			
 
 	/* body */
 
 	.all-boxes {
-	border: 1px solid red;
-	width: auto;
-	display: flex;
-	flex-direction: row; 
-	flex-wrap: wrap;
-	justify-content: center;
-	}
+		width: auto;
+		display: flex;
+		flex-direction: row; 
+		flex-wrap: wrap;
+		justify-content: center;
+		}
 	
 	.box {
 		width: 400px;
+		height: 200px;
 		border: 1px solid black;
 		padding: 20px;
-		margin: 10px;
+		margin: 20px;
 		background: #F4F4F4;
-		
 		}
 
-	/*.box-2 {
+	button {
+		text-align: center;
+		width: 140px;
+		height: 30px;
+		border-radius: 7px;
+		border: 1px solid black;
+		margin: 10px;
+		}
+
+
+	.box-1 {
+		margin: auto;
+		margin-left: 60px;
+		display: inline-block;
+		width: 300px;
+		}
+		
+	.box-2 {
 		border: 1px solid black;
 		padding: 20px;
 		margin: 10px;
@@ -194,7 +225,7 @@ h1, h2, h3, h4, h5 {
 		padding: 20px;
 		margin: 10px;
 		}
-		*/
+		
 
 	/* footer */ 
 
@@ -204,40 +235,48 @@ h1, h2, h3, h4, h5 {
 		padding: 20px 0;
 	}
 
-	/*.box-6 {
+	.box-6 {
 		margin: auto;
 		margin-left: 60px;
-	}*/
+	}
 
 .footer-box {
-	border: 2px solid green;
 	width: auto;
 	display: flex;
-	flex-direction: row;
-	flex: wrap;
+	flex-flow: row wrap;
 	justify-content: center;
-}
+	}
 
 .footer-box-kid {
 	width: 400px;
-	border: 1px solid black;
+	height: 200px;
+   	position: relative;
+	right: 20px;
 }
 
-/* 
+.services-info-img {
+	width: 400px;
+	height: 250px;
+	position: relative;
+	left: 20px;
+
+}
+
+
 .bottom-img {
-border: 1px solid blue;
-display: flex;
-flex: wrap;
-justify-content: center;
+	display: flex;
+	flex: wrap;
+	justify-content: center;
 } */
 
-/* .services-info-img {
+.services-info-img {
 	width: 425px;
 	padding-left: 15px;
 	padding-right: 10px;
-} */
+}
 
 
-	/* .copyright {
-		text-align: ;
-	} */
+.copyright {
+	text-align: center;
+	padding-top: 10px;
+	} 
