@@ -3,275 +3,366 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-	.container-index {
-		width: 70%;
-		height: 50%;
-		margin-left: auto;
-		margin-right: auto;
-  		}
 
-	.container {
-		width: 90%;
-		height: 50%;
-		margin-left: auto;
-		margin-right: auto;
-		} 
+.container-index {
+    width: 70%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-	/* Navigation */
-
-	nav {
-		word-spacing: 65px;
-		}
-
-	.nav-index {
-		word-spacing: 70px;
-		position: static;
-		padding-right: 200px;
-		}
-		
-		
-	/* header */
-
-	.logo {
-		position: relative;
-		left: 720px;
-		bottom: 30px;
-		} 
-
-	.logo-2 {
-		padding-bottom: 15px;
-		padding-left: 40px;
-		}
-
-	.logo-index {
-		position: relative;
-		left: 750px;
-		bottom:30px;
-		}
-
-	a:link {
-		color:lightgrey;
-		text-decoration: none;
-		}
-
-	header {
-		border-bottom: 1px solid black;
-		margin: 20px 0;
-		padding: 20px 0;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		}
-
-	.child-container  {
-		width: 850px;
-		margin-top: 25px;
-		margin-bottom: 15px;
-		}
+.container {
+    width: 80%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
-	.demand {
-		position: relative; 
-		right: 200px;
-		top: 100px;
-		text-align: center;
-		font-size: 80px;
-		font-weight: bold;
-		font-family: "bangers";
-		}
+/* Navigation */
 
-	
-	.button-index {
-		position: relative;
-		top: 200px;
-		left: 130px;
-		width: 20%;
-		font-size: 15px;
-		background-color: whitesmoke;
-		font-weight: lighter;
-		}
+nav {
+    word-spacing: 65px;
+}
 
-	.circle {
-		position: relative;
-		bottom: 200px;
-		left: 470px;
-		}
-			
-
-	/* body */
-
-	.all-boxes {
-		width: auto;
-		display: flex;
-		flex-direction: row; 
-		flex-wrap: wrap;
-		justify-content: center;
-		}
-	
-	.box {
-		width: 450px;
-		height: 200px;
-		border: 1px solid black;
-		padding: 20px;
-		margin: 20px;
-		background: #F4F4F4;
-		}
-
-	button {
-		text-align: center;
-		width: 140px;
-		height: 30px;
-		border-radius: 7px;
-		border: 1px solid black;
-		margin: 10px;
-		}
+.nav-index {
+    word-spacing: 70px;
+    position: static;
+    padding-right: 200px;
+}
 
 
-	.box-1 {
-		margin: auto;
-		margin-left: 60px;
-		display: inline-block;
-		width: 300px;
-		}
+/* header */
 
-	.box-2 {
-		display: inline-block;
-		margin:0px 0px 0px 180px;
-		width: 350px; 
-		}
-	
+.logo {
+    position: relative;
+    left: 720px;
+    bottom: 30px;
+}
 
-	.middle-img{
-		display: block;
-		margin: 20px 0px 40px 60px;
-		}
+.logo-2 {
+    padding-bottom: 15px;
+    padding-left: 40px;
+}
 
-	.box-3 {
-		margin: auto;
-		margin-left: 60px;
-		display: inline-block;
-		width: 200px;
-		}
-	
+.logo-index {
+    position: relative;
+    left: 750px;
+    bottom: 30px;
+}
 
-	.box-4 {
-		margin:0px 0px 0px 130px;
-		display: inline-block;
-		width: 200px;
-		}
-	
-	.box-5 {
-		margin:0px 0px 0px 130px;
-		display: inline-block;
-		width: 200px;
-		}
-	
-	.box-6 {
-		margin: auto;
-		margin-left: 60px;
-		}
-		
+a:link {
+    color: lightgrey;
+    text-decoration: none;
+}
 
-	/* footer */ 
+header {
+    border-bottom: 1px solid black;
+    margin: 20px 0;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-	footer {
-		border-top: 1px solid black;
-		margin: 20px 0px;
-		padding: 20px 0;
-		}
+.child-container {
+    width: 850px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
 
-	.box-6 {
-		width: 200px;
-		line-height: 1.6;
-		}
+.demand {
+    position: relative;
+    right: 200px;
+    top: 100px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: "bangers";
+}
 
-	.footer-box {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		}
-		
-		
-	.bottom-box  {
-		width: 475px;
-		padding-right: 30px;
-		}
-	
-	.services-info-img {
-		
-		width: 468px;
-		height: 250px;
-		padding-left: 18px;
-		}
-	
- 	.footer-index {
-		border-top: 1px solid black;
-		margin: 20px 0px;
-		padding: 20px 0;
-		}
+.button-index {
+    position: relative;
+    top: 200px;
+    left: 130px;
+    width: 20%;
+    font-size: 15px;
+    background-color: whitesmoke;
+    font-weight: lighter;
+}
 
-	.copyright {
-		text-align: center;
-		padding-top: 30px;
-		} 
+.circle {
+    position: relative;
+    bottom: 200px;
+    left: 470px;
+}
+
+
+/* body */
+
+.all-boxes {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 450px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    background: #F4F4F4;
+}
+
+button {
+    text-align: center;
+    width: 140px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.box-1 {
+    margin: auto;
+    margin-left: 60px;
+    display: inline-block;
+    width: 300px;
+}
+
+.box-2 {
+    display: inline-block;
+    margin: 0px 0px 0px 180px;
+    width: 350px;
+}
+
+.middle-img {
+    display: block;
+    margin: 20px 0px 40px 60px;
+}
+
+.box-3 {
+    margin: auto;
+    margin-left: 60px;
+    display: inline-block;
+    width: 200px;
+}
+
+.box-4 {
+    margin: 0px 0px 0px 130px;
+    display: inline-block;
+    width: 200px;
+}
+
+.box-5 {
+    margin: 0px 0px 0px 130px;
+    display: inline-block;
+    width: 200px;
+}
+
+.box-6 {
+    margin: auto;
+    margin-left: 60px;
+}
+
+
+/* footer */
+
+footer {
+    border-top: 1px solid black;
+    margin: 20px 0px;
+    padding: 20px 0;
+}
+
+.box-6 {
+    width: 200px;
+    line-height: 1.6;
+}
+
+.footer-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.bottom-box {
+    width: 400px;
+    padding-right: 30px;
+}
+
+.services-info-img {
+    width: 400px;
+    height: 250px;
+    padding-left: 18px;
+}
+
+.footer-index {
+    border-top: 1px solid black;
+    margin: 20px 0px;
+    padding: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+}
