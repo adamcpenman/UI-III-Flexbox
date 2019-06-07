@@ -262,3 +262,62 @@ footer {
     text-align: center;
     padding-top: 30px;
 }
+
+.box {
+    background: white;
+    animation-name: color;
+    animation-duration: 12s;
+}
+
+@keyframes color {
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: orange;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60% {
+        background-color: green;
+    }
+    80% {
+        background-color: blue;
+    }
+    100% {
+        background-color: violet;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        width: 90%;
+        background-color: pink;
+    }
+    nav {
+        float: none;
+        width: 40%;
+    }
+    body {
+        width: 100%;
+        background-color: pink;
+    }
+    .box {
+        background: lightblue;
+    }
+    footer {
+        width: 90%;
+        background-color: pink;
+    }
+    .services-header-img {
+        width: 90%;
+        height: 90%;
+    }
+    button {
+        width: 50%;
+        border: 4px dotted purple;
+        background-color: darkblue;
+        color: whitesmoke;
+    }
+}
